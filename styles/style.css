@@ -208,7 +208,6 @@
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 0.3em;
-  text-align: right;
   text-transform: uppercase;
 }
 
@@ -296,8 +295,8 @@
   justify-content: space-between;
   width: 334px;
   height: 596px;
-  background: linear-gradient(#00000099, #00000099),
-    url(../images/card-lot-01.jpg);
+  background:
+    linear-gradient(#00000099, #00000099), url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -314,8 +313,8 @@
   justify-content: space-between;
   width: 334px;
   height: 596px;
-  background: linear-gradient(#00000099, #00000099),
-    url(../images/card-lot-02.jpg);
+  background:
+    linear-gradient(#00000099, #00000099), url(../images/card-lot-02.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -326,8 +325,8 @@
   justify-content: space-between;
   width: 334px;
   height: 596px;
-  background: linear-gradient(#00000099, #00000099),
-    url(../images/card-lot-03.jpg);
+  background:
+    linear-gradient(#00000099, #00000099), url(../images/card-lot-03.jpg);
   background-size: cover;
   background-position: center;
 }

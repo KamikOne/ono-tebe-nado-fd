@@ -5,7 +5,7 @@
   align-items: center;
   padding: 92px 50px 96px;
   width: 1100px;
-	gap: 35px;
+  gap: 35px;
 }
 
 .header__menu {
@@ -44,11 +44,10 @@
 }
 
 .header__logo {
-	display: flex;
+  display: flex;
   width: 148px;
   height: 105px;
-	/* margin-left: 35px; */
-	align-self: start;
+  align-self: start;
 }
 
 .header__logo img {
@@ -66,13 +65,16 @@
 }
 
 .address a {
-	position: relative;
+  position: relative;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5rem;
   letter-spacing: 0;
   color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
 
 .address p {
@@ -86,16 +88,9 @@
 
 /* Специфичные стили header__address */
 .header__address {
-  /* margin-bottom: 95px; */
   max-width: 240px;
-	width: 100%;
+  width: 100%;
   margin-left: auto;
-}
-
-.header__address a {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
 }
 
 /* Cover */
@@ -104,20 +99,22 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-	max-width: 1100px;
+  max-width: 1100px;
   padding: 165px 50px 50px;
-  background: rgba(0, 0, 0, 0.6) url('../images/cover.jpg') no-repeat center / cover;
-  background-blend-mode: overlay;
-	gap: 106px;
-	margin-bottom: 180px;
+  position: relative;
+  background: url('../images/cover.jpg') no-repeat center / cover;
+  gap: 106px;
+  margin-bottom: 180px;
 }
 
 .cover__title {
+  position: relative;
+  z-index: 1;
   width: 100%;
-	max-width: 1000px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 20px 25px; 
+  gap: 20px 25px;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -137,23 +134,22 @@
 
 .cover__title-word_position_center {
   align-self: center;
-		/* Это компенсирует лишний letter-spacing после последней буквы. */
-	margin-right: -0.3em;
+  /* Это компенсирует лишний letter-spacing после последней буквы. */
+  margin-right: -0.3em;
 }
 
 .cover__title-word_position_right {
   align-self: flex-end;
-	margin-right: -0.3em; 
-
-
+  margin-right: -0.3em;
 }
 
 .cover__description {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  
 }
 
 .cover__description p {
@@ -189,10 +185,9 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-	max-width: 1052px;
-	margin: 0 24px 120px;
-	gap: 34px;
-	
+  max-width: 1052px;
+  margin: 0 24px 120px;
+  gap: 34px;
 }
 
 .lots__heading {
@@ -202,7 +197,7 @@
   line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
-	margin-left: 40px;
+  margin-left: 40px;
 }
 
 .lots__card-list {
@@ -219,7 +214,7 @@
   justify-content: space-between;
   flex-grow: 1;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   background-size: cover;
   background-position: center;
 }
@@ -292,7 +287,6 @@
   letter-spacing: 0;
 }
 
-
 .lots__look-more-link {
   margin-left: 40px;
   font-family: 'Raleway', sans-serif;
@@ -312,12 +306,12 @@
   flex-direction: row;
   gap: 72px;
   width: 100%;
-	max-width: 1052px;
-	margin: 0 24px 180px;
+  max-width: 1052px;
+  margin: 0 24px 180px;
 }
 
 .about__column:first-child {
-	display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -325,21 +319,22 @@
   height: 240px;
   background: #000000;
   border-radius: 50%;
-	margin-left: 47px;
-	margin-top: 35px;
+  margin-left: 47px;
+  margin-top: 35px;
 }
+
 .about__column:first-child img {
   width: 148px;
   height: 114px;
 }
 
 .about__column:nth-child(2) {
-	display: flex;
+  display: flex;
   flex-direction: column;
   width: 100%;
-	max-width: 693px;
+  max-width: 693px;
   margin-top: 139px;
-	gap: 100px;
+  gap: 100px;
 }
 
 .about__title {
@@ -355,7 +350,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* width: 693px; */
 }
 
 .about__text p {
@@ -369,24 +363,16 @@
   letter-spacing: 0;
 }
 
-
 .footer {
   display: flex;
   justify-content: space-between;
   width: 1100px;
-  padding: 0 50px;
-
+  padding: 0 50px 82px;
 }
 
 /* Специфичные стили footer__address */
 .footer__address {
   width: 265px;
-}
-
-.footer__address a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
 }
 
 .footer__address p {
